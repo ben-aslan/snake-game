@@ -40,9 +40,9 @@ public class GamePanel extends JPanel {
         }
 
         g.setColor(Color.GREEN);
-        for (int i = 0; i < game.length; i++) {
-            int x = game.snakes[i].getX();
-            int y = game.snakes[i].getY();
+        for (int i = 0; i < game.snake.length; i++) {
+            int x = game.snake.getCell(i).getX();
+            int y = game.snake.getCell(i).getY();
             g.fillRect(x * cellSize, y * cellSize, cellSize, cellSize);
         }
 
